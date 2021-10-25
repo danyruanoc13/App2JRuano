@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2JRuano.MainPage">
+
+    <StackLayout>
+        <Label Text="USUARIO: estudiante2021" HorizontalTextAlignment="End" TextColor="DarkOliveGreen"  FontSize="15"/>
+        <Label x:Name="lblusuario" HorizontalTextAlignment="Center" TextColor="DarkSlateBlue" FontSize="13"/>
+        <Label x:Name="lblpass"/>
+
+        <Frame BackgroundColor="DarkOliveGreen" Padding="15" CornerRadius="0">
+            <Label Text="CÁLCULO DE CALIFICACIONES UISRAEL" HorizontalTextAlignment="Center" TextColor="Black" FontSize="17"/>
+        </Frame>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+
+            </Grid.ColumnDefinitions>
+                
+
+            <Label Text="NOTA DE SEGUIMIENTO 1:" Grid.Row="0" Grid.Column="0"/>
+            <Entry x:Name="txtNotaS1" Keyboard="Numeric" Grid.Row="0" Grid.Column="1" HorizontalTextAlignment="Center"/>
+
+            <Label Text="NOTA DE EXAMEN:" Grid.Row="1" Grid.Column="0"/>
+            <Entry x:Name="txtNotaE1" Keyboard="Numeric" Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="Center"/>
+
+            <Label Text="EVALUACIÓN PARCIAL:" Grid.Row="2" Grid.Column="0"/>
+            <Entry x:Name="txtResultadoParcial"  Grid.Row="2" Grid.Column="1" Keyboard="Numeric" IsEnabled="False" HorizontalTextAlignment="Center"/>
+
+            <Button x:Name="btnCalEP" Text="Calcular E. Parcial" Clicked="btnCalEP_Clicked" Grid.Row="3" Grid.Column="0"/>
+            <Entry x:Name="txtEP"  Grid.Row="3" Grid.Column="1" Keyboard="Numeric" IsEnabled="False" HorizontalTextAlignment="Center" />
+
+
+
+            <Label Text="NOTA DE SEGUIMIENTO 2:" Grid.Row="5" Grid.Column="0"/>
+            <Entry x:Name="txtNotaS2" Keyboard="Numeric" Grid.Row="5" Grid.Column="1" HorizontalTextAlignment="Center"/>
+
+            <Label Text="NOTA DE EXAMEN:" Grid.Row="6" Grid.Column="0"/>
+            <Entry x:Name="txtNotaE2" Keyboard="Numeric" Grid.Row="6" Grid.Column="1" HorizontalTextAlignment="Center"/>
+
+            <Label Text="EVALUACIÓN FINAL:" Grid.Row="7" Grid.Column="0"/>
+            <Entry x:Name="txtResultadoFinal"  Grid.Row="7" Grid.Column="1" Keyboard="Numeric" IsEnabled="False" HorizontalTextAlignment="Center"/>
+
+            <Button x:Name="btnCalEF" Text="Calcular E. Final" Clicked="btnCalEF_Clicked" Grid.Row="8" Grid.Column="0"/>
+            <Entry x:Name="txtEF"  Grid.Row="8" Grid.Column="1" Keyboard="Numeric" IsEnabled="False" HorizontalTextAlignment="Center"/>
+
+
+        </Grid>
+
+        <Button x:Name="btnCalProm" Text="Calcular promedio" Clicked="btnCalProm_Clicked"/>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Label Text="NOTA DEL ESTUDIANTE:" Grid.Row="1" Grid.Column="0"/>
+            <Entry x:Name="txtNotaF"  Grid.Row="1" Grid.Column="1" Keyboard="Numeric" IsEnabled="False" HorizontalTextAlignment="Center"/>
+
+            <Label Text="ESTADO:" Grid.Row="2" Grid.Column="0"/>
+            <Entry x:Name="txtEstado"  Grid.Row="2" Grid.Column="1" Keyboard="Numeric" IsEnabled="False" HorizontalTextAlignment="Center"/>
+        </Grid>
+
+
+
+    </StackLayout>
+
+</ContentPage>
